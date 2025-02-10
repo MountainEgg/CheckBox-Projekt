@@ -1,0 +1,19 @@
+﻿<Window x:Class="CheckBox_Projekt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CheckBox_Projekt"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel Margin="24">
+        <Label>Benutzername:</Label>
+        <TextBox x:Name="txtb_username"/>
+        <Label>Passwort:</Label>
+        <PasswordBox x:Name="txtb_password"/>
+
+        <CheckBox x:Name="cbox_agb" Unchecked="cbox_agb_Unchecked" Checked="cbox_agb_Checked" IsChecked="False" Margin="17">Ich akzeptiere die AGB</CheckBox>
+        <Button x:Name="btn_register" IsEnabled="False" Click="Button_Click">Registrieren</Button>
+        <Label x:Name="lbl_reports" Margin="12"/>
+    </StackPanel>
+</Window>
